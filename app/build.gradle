@@ -6,7 +6,6 @@ android {
         applicationId "com.example.android.abnd_project_five"
         minSdkVersion 19
         targetSdkVersion 27
-        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

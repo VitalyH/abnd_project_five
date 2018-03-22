@@ -1,5 +1,7 @@
 package com.example.android.abnd_project_five;
 
+import android.content.Context;
+import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -10,9 +12,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class RigaFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @SuppressWarnings("FieldCanBeLocal")
-
     final private int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3", "Tab4" };
 
     public RigaFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -23,11 +23,12 @@ public class RigaFragmentPagerAdapter extends FragmentPagerAdapter {
         return PAGE_COUNT;
     }
 
+    // Get right fragments
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
             return new TopSightsFragment();
-        } else if (position == 1){
+        } else if (position == 1) {
             return new WineDineFragment();
         } else if (position == 2) {
             return new BarsClubsFragment();
@@ -36,11 +37,25 @@ public class RigaFragmentPagerAdapter extends FragmentPagerAdapter {
         }
     }
 
+    // Generate title based on item position
     @Override
     public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+
+        switch (position) {
+
+            case 0:
+                return App.context().getString(R.string.category_top_sights);
+
+            case 1:
+                return App.context().getString(R.string.category_wine_dine);
+
+            case 2:
+                return App.context().getString(R.string.category_bars_clubs);
+
+            case 3:
+                return App.context().getString(R.string.category_with_kids);
+        }
+
+        return null;
     }
-
-
 }

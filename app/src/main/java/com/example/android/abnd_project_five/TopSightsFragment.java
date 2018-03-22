@@ -1,13 +1,18 @@
 package com.example.android.abnd_project_five;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.net.URL;
 import java.util.ArrayList;
 
 /**
@@ -26,13 +31,24 @@ public class TopSightsFragment extends Fragment {
 
 
         // Use RigaAdapter.
-
         RigaAdapter adapter = new RigaAdapter(getActivity(), rigas, R.color.category_sights);
         View rootView = inflater.inflate(R.layout.activity_main, container, false);
         ListView listView = rootView.findViewById(R.id.riga);
         //ListView listView = findViewById(R.id.song);
         if (listView != null) {
             listView.setAdapter(adapter);
+
+            // Handle clicks on items in ListView.
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                    // Get the Riga object at the given position the user clicked on.
+                    Riga riga = rigas.get(position);
+                    // Open link in the browser.
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(riga.getRigaWeb()));
+                    startActivity(browserIntent);
+                }
+            });
         }
         return rootView;
     }
