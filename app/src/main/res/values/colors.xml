@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color for the sights category -->
+    <color name="category_sights">#379237</color>
+
+    <!-- Background color for the wine&dine category -->
+    <color name="category_wine_dine">#FD8E09</color>
+
+    <!-- Background color for the bars&clubs category -->
+    <color name="category_bars_clubs">#8800A0</color>
+
+    <!-- Background color for the kids category -->
+    <color name="category_kids">#16AFCA</color>
 </resources>

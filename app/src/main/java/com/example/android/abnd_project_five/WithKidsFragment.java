@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,17 +17,26 @@ import android.widget.TextView;
 public class WithKidsFragment extends Fragment {
 
 
-    public WithKidsFragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
+        // Create an ArrayList of top sights in Riga.
+        // Hardcode them. In real app they wouldn't be there anyway (SQLite, ext. source, etc.)
+        final ArrayList<Riga> rigas = new ArrayList<>();
+        rigas.add(new Riga("Latvian National Museum of Art", "10:00-18:00", "https://www.liveriga.com/en/1176-latvian-national-museum-of-art", R.drawable.s_1));
+
+
+        // Use RigaAdapter.
+
+        RigaAdapter adapter = new RigaAdapter(getActivity(), rigas, R.color.category_kids);
+        View rootView = inflater.inflate(R.layout.activity_main, container, false);
+        ListView listView = rootView.findViewById(R.id.riga);
+        //ListView listView = findViewById(R.id.song);
+        if (listView != null) {
+            listView.setAdapter(adapter);
+        }
+        return rootView;
     }
+
 
 }
