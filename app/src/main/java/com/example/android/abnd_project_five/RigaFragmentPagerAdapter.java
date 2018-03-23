@@ -1,7 +1,5 @@
 package com.example.android.abnd_project_five;
 
-import android.content.Context;
-import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -23,7 +21,7 @@ public class RigaFragmentPagerAdapter extends FragmentPagerAdapter {
         return PAGE_COUNT;
     }
 
-    // Get right fragments
+    // Get right fragments.
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
@@ -37,7 +35,7 @@ public class RigaFragmentPagerAdapter extends FragmentPagerAdapter {
         }
     }
 
-    // Generate title based on item position
+    // Generate title based on item position.
     @Override
     public CharSequence getPageTitle(int position) {
 

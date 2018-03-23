@@ -4,4 +4,44 @@
     <string name="category_wine_dine">Wine &amp; Dine</string>
     <string name="category_bars_clubs">Bars &amp; Clubs</string>
     <string name="category_with_kids">With Kids</string>
+
+     <array name="top_sights_venues">
+        <item >Latvian National Museum of Art</item>
+        <item >The Old Town</item>
+        <item >Freedom Monument</item>
+        <item >Art Nouveau</item>
+        <item >Dome Square</item>
+        <item >St. Peter"'"s Church</item>
+        <item >National Library of Latvia</item>
+        <item >Kalnciema District</item>
+        <item >Miera iela</item>
+        <item >Latvian National Opera and Ballet</item>
+    </array>
+
+    <array name="top_sights_working_hours">
+        <item >10:00&#8211;18:00</item>
+        <item >Always</item>
+        <item >Always</item>
+        <item >Always</item>
+        <item >Always</item>
+        <item >10:00&#8211;19:00</item>
+        <item >9:00&#8211;20:00</item>
+        <item >Always</item>
+        <item >Always</item>
+        <item >Varies</item>
+    </array>
+
+    <array name="top_sights_web_address">
+        <item >https://www.liveriga.com/en/1176-latvian-national-museum-of-art</item>
+        <item >https://www.liveriga.com/en/7896-the-old-town</item>
+        <item >https://www.liveriga.com/en/3231-freedom-monument</item>
+        <item >https://www.liveriga.com/en/7971-art-nouveau</item>
+        <item >https://www.liveriga.com/en/1155-dome-square</item>
+        <item >https://www.liveriga.com/en/1628-st-peter-s-church</item>
+        <item >https://www.liveriga.com/en/6461-national-library-of-latvia</item>
+        <item >https://www.liveriga.com/en/3098-kalnciema-district</item>
+        <item >https://www.liveriga.com/en/8928-miera-iela</item>
+        <item >https://www.liveriga.com/en/1172-latvian-national-opera</item>
+    </array>
+
 </resources>

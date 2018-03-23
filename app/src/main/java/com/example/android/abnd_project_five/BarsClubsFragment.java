@@ -24,7 +24,7 @@ public class BarsClubsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Create an ArrayList of top sights in Riga.
-        // Hardcode them. In real app they wouldn't be there anyway (SQLite, ext. source, etc.)
+
         final ArrayList<Riga> rigas = new ArrayList<>();
         rigas.add(new Riga("Latvian National Museum of Art", "10:00-18:00", "https://www.liveriga.com/en/1176-latvian-national-museum-of-art", R.drawable.s_1));
 
