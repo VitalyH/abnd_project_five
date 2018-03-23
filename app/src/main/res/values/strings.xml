@@ -7,180 +7,193 @@
 
     <!-- Top Sights fragment resources -->
 
-     <array name="top_sights_venues">
-        <item >Latvian National Museum of Art</item>
-        <item >The Old Town</item>
-        <item >Freedom Monument</item>
-        <item >Art Nouveau</item>
-        <item >Dome Square</item>
-        <item >St. Peter"'"s Church</item>
-        <item >National Library of Latvia</item>
-        <item >Kalnciema District</item>
-        <item >Miera iela</item>
-        <item >Latvian National Opera and Ballet</item>
+    <array name="top_sights_venues">
+        <item>Latvian National Museum of Art</item>
+        <item>The Old Town</item>
+        <item>Freedom Monument</item>
+        <item>Art Nouveau</item>
+        <item>Dome Square</item>
+        <item>St. Peter"'"s Church</item>
+        <item>National Library of Latvia</item>
+        <item>Kalnciema District</item>
+        <item>Miera iela</item>
+        <item>Latvian National Opera and Ballet</item>
     </array>
 
     <array name="top_sights_working_hours">
-        <item >10:00&#8211;18:00</item>
-        <item >Always</item>
-        <item >Always</item>
-        <item >Always</item>
-        <item >Always</item>
-        <item >10:00&#8211;19:00</item>
-        <item >9:00&#8211;20:00</item>
-        <item >Always</item>
-        <item >Always</item>
-        <item >Varies</item>
+        <item>10:00&#8211;18:00</item>
+        <item>Always</item>
+        <item>Always</item>
+        <item>Always</item>
+        <item>Always</item>
+        <item>10:00&#8211;19:00</item>
+        <item>9:00&#8211;20:00</item>
+        <item>Always</item>
+        <item>Always</item>
+        <item>Varies</item>
     </array>
 
     <array name="top_sights_web_address">
-        <item >https://www.liveriga.com/en/1176-latvian-national-museum-of-art</item>
-        <item >https://www.liveriga.com/en/7896-the-old-town</item>
-        <item >https://www.liveriga.com/en/3231-freedom-monument</item>
-        <item >https://www.liveriga.com/en/7971-art-nouveau</item>
-        <item >https://www.liveriga.com/en/1155-dome-square</item>
-        <item >https://www.liveriga.com/en/1628-st-peter-s-church</item>
-        <item >https://www.liveriga.com/en/6461-national-library-of-latvia</item>
-        <item >https://www.liveriga.com/en/3098-kalnciema-district</item>
-        <item >https://www.liveriga.com/en/8928-miera-iela</item>
-        <item >https://www.liveriga.com/en/1172-latvian-national-opera</item>
+        <item>https://www.liveriga.com/en/1176-latvian-national-museum-of-art</item>
+        <item>https://www.liveriga.com/en/7896-the-old-town</item>
+        <item>https://www.liveriga.com/en/3231-freedom-monument</item>
+        <item>https://www.liveriga.com/en/7971-art-nouveau</item>
+        <item>https://www.liveriga.com/en/1155-dome-square</item>
+        <item>https://www.liveriga.com/en/1628-st-peter-s-church</item>
+        <item>https://www.liveriga.com/en/6461-national-library-of-latvia</item>
+        <item>https://www.liveriga.com/en/3098-kalnciema-district</item>
+        <item>https://www.liveriga.com/en/8928-miera-iela</item>
+        <item>https://www.liveriga.com/en/1172-latvian-national-opera</item>
     </array>
 
     <!-- Wine & Dine fragment resources -->
 
     <array name="wine_dine_venues">
-        <item >LIDO Leisure Centre Restaurant</item>
-        <item >Blue Cow</item>
-        <item >Valter"'"s restaurant</item>
-        <item >Key to Riga</item>
-        <item >De Commerce Gastro Pub 1871</item>
-        <item >Niklāvs</item>
-        <item >Province</item>
-        <item >Salve</item>
-        <item >Vincents Restaurant</item>
-        <item >Restaurant 3</item>
+        <item>LIDO Leisure Centre Restaurant</item>
+        <item>Blue Cow</item>
+        <item>Valter"'"s restaurant</item>
+        <item>Key to Riga</item>
+        <item>De Commerce Gastro Pub 1871</item>
+        <item>Niklāvs</item>
+        <item>Province</item>
+        <item>Salve</item>
+        <item>Vincents Restaurant</item>
+        <item>Restaurant 3</item>
     </array>
 
     <array name="wine_dine_working_hours">
-        <item >13:00&#8211;23:00</item>
-        <item >11:00&#8211;24:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >10:00&#8211;.....</item>
-        <item >7:00&#8211;23:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;23:00</item>
-        <item >12:00&#8211;23:00</item>
-        <item >18:00&#8211;22:00</item>
-        <item >12:00&#8211;23:00</item>
+        <item>13:00&#8211;23:00</item>
+        <item>11:00&#8211;24:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>10:00&#8211;.....</item>
+        <item>7:00&#8211;23:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;23:00</item>
+        <item>12:00&#8211;23:00</item>
+        <item>18:00&#8211;22:00</item>
+        <item>12:00&#8211;23:00</item>
     </array>
 
     <array name="wine_dine_price_range">
-        <item >€€</item>
-        <item >€€€</item>
-        <item >€€</item>
-        <item >€€€</item>
-        <item >€€</item>
-        <item >€€€€</item>
-        <item >€€</item>
-        <item >€€€</item>
-        <item >€€€€€</item>
-        <item >€€</item>
+        <item>€€</item>
+        <item>€€€</item>
+        <item>€€</item>
+        <item>€€€</item>
+        <item>€€</item>
+        <item>€€€€</item>
+        <item>€€</item>
+        <item>€€€</item>
+        <item>€€€€€</item>
+        <item>€€</item>
 
     </array>
 
     <array name="wine_dine_web_address">
-        <item >https://www.liveriga.com/en/1117-lido-recreation-centre</item>
-        <item >https://www.liveriga.com/en/5166-zila-govs</item>
-        <item >https://www.liveriga.com/en/6433-valter-s-restaurant</item>
-        <item >https://www.liveriga.com/en/6716-key-to-riga</item>
-        <item >https://www.liveriga.com/en/7359-de-commerce-gastro-pub-1871-restaurant-and-bar</item>
-        <item >https://www.liveriga.com/en/7679-niklavs</item>
-        <item >https://www.liveriga.com/en/9648-province</item>
-        <item >https://www.liveriga.com/en/9649-salve</item>
-        <item >https://www.liveriga.com/en/1605-vincents-restaurant</item>
-        <item >https://www.liveriga.com/en/7727-restaurant-3</item>
+        <item>https://www.liveriga.com/en/1117-lido-recreation-centre</item>
+        <item>https://www.liveriga.com/en/5166-zila-govs</item>
+        <item>https://www.liveriga.com/en/6433-valter-s-restaurant</item>
+        <item>https://www.liveriga.com/en/6716-key-to-riga</item>
+        <item>https://www.liveriga.com/en/7359-de-commerce-gastro-pub-1871-restaurant-and-bar</item>
+        <item>https://www.liveriga.com/en/7679-niklavs</item>
+        <item>https://www.liveriga.com/en/9648-province</item>
+        <item>https://www.liveriga.com/en/9649-salve</item>
+        <item>https://www.liveriga.com/en/1605-vincents-restaurant</item>
+        <item>https://www.liveriga.com/en/7727-restaurant-3</item>
     </array>
 
     <!-- Bars & Clubs fragment resources -->
 
     <array name="bars_clubs_venues">
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
+        <item>Pashkevich Jazz Club</item>
+        <item>The Armoury Bar</item>
+        <item>Spot Kafe</item>
+        <item>B-bārs</item>
+        <item>B-bārs</item>
+        <item>Coyote Fly</item>
+        <item>Skyline Bar</item>
+        <item>Bar XIII</item>
+        <item>Kaņepes Culture Centre</item>
+        <item>Paddy Whelan`s Irish Pub</item>
     </array>
 
     <array name="bars_clubs_working_hours">
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
+        <item>17:00&#8211;.....</item>
+        <item>14:00&#8211;2:00</item>
+        <item>12:00&#8211;3:00</item>
+        <item>12:00&#8211;.....</item>
+        <item>11:00&#8211;00:00</item>
+        <item>23:00&#8211;6:00</item>
+        <item>12:00&#8211;2:00</item>
+        <item>16:00&#8211;23:00</item>
+        <item>17:00&#8211;.....</item>
+        <item>11:00&#8211;01:00</item>
     </array>
 
     <array name="bars_clubs_web_address">
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
+        <item>https://www.liveriga.com/en/9700-pashkevich-jazz-club</item>
+        <item>https://www.liveriga.com/en/9593-the-armoury-bar</item>
+        <item>https://www.liveriga.com/en/9161-spot-kafe</item>
+        <item>https://www.liveriga.com/en/8953-aqua-luna</item>
+        <item>https://www.liveriga.com/en/1606-b-bars</item>
+        <item>https://www.liveriga.com/en/3954-coyote-fly</item>
+        <item>https://www.liveriga.com/en/1079-skyline-bar</item>
+        <item>https://www.liveriga.com/en/8131-bar-xiii</item>
+        <item>https://www.liveriga.com/en/5810-kanepes-culture-centre</item>
+        <item>https://www.liveriga.com/en/2242-paddy-whelan-s-irish-pub-sports-</item>
+    </array>
+
+    <array name="bars_clubs_price_range">
+        <item>€€</item>
+        <item>€€€</item>
+        <item>€€€€€</item>
+        <item>€€€</item>
+        <item>€€</item>
+        <item>€€</item>
+        <item>€€€€</item>
+        <item>€€€</item>
+        <item>€€</item>
+        <item>€€</item>
     </array>
 
     <!-- With Kids fragment resources -->
 
     <array name="with_kids_venues">
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
     </array>
 
     <array name="with_kids_working_hours">
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
-        <item >12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
+        <item>12:00&#8211;22:00</item>
     </array>
 
     <array name="with_kids_web_address">
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
-        <item >****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
+        <item>****</item>
     </array>
 
 </resources>
