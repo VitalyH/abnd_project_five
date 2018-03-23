@@ -28,7 +28,7 @@
         <!-- Visibility: All -->
         <TextView
             android:id="@+id/list_view_venue_title"
-            style="@style/ListViewSongPlaylistTitle"
+            style="@style/ListViewVenue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -36,34 +36,34 @@
         <!-- Visibility: All -->
         <TextView
             android:id="@+id/list_view_working_hours_tag"
-            style="@style/ListViewArtist"
+            style="@style/ListViewTags"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/list_view_venue_title"
-            android:text="Working Hours:" />
+            android:text="@string/list_view_working_hours" />
 
         <!-- Working hours -->
         <!-- Visibility: All -->
         <TextView
             android:id="@+id/list_view_working_hours"
-            style="@style/ListViewArtist"
+            style="@style/ListViewNumbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/list_view_venue_title"
             android:layout_toEndOf="@+id/list_view_working_hours_tag" />
 
         <!-- Price range tag -->
-        <!-- Visibility: Wine&Dine -->
+        <!-- Visibility: Wine&Dine, Bars&Clubs -->
         <TextView
             android:id="@+id/list_view_price_range_tag"
-            style="@style/ListViewTag"
+            style="@style/ListViewTags"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/list_view_working_hours_tag"
-            android:text="Price Range:" />
+            android:text="@string/list_view_price_range" />
 
         <!-- Price range -->
-        <!-- Visibility: Wine&Dine -->
+        <!-- Visibility: Wine&Dine, Bars&Clubs -->
         <TextView
             android:id="@+id/list_view_price_range"
             style="@style/ListViewNumbers"
@@ -76,7 +76,7 @@
         <!-- Visibility: All -->
         <ImageView
             android:id="@+id/list_view_button"
-            style="@style/ListViewPlayEuroButton"
+            style="@style/ListViewButton"
             android:src="@drawable/ic_open_in_browser" />
 
     </RelativeLayout>

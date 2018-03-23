@@ -4,8 +4,8 @@
     <string name="category_wine_dine">Wine &amp; Dine</string>
     <string name="category_bars_clubs">Bars &amp; Clubs</string>
     <string name="category_with_kids">With Kids</string>
-    <string name="list_view_working_hours">Working Hours</string>
-    <string name="list_view_price_range">Price Range</string>
+    <string name="list_view_working_hours">Working Hours:</string>
+    <string name="list_view_price_range">Price Range:</string>
 
     <!-- Top Sights fragment resources -->
 
