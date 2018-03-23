@@ -6,6 +6,9 @@ This is an app with multiple screens, each of which lists a kind of attraction f
 
 Once you've decided on the location you'd like to show off, you'll want to build the structure of your app. Уou'll make multiple screens, each containing a list. You will use a ViewPager plus TabLayout (or Navigation Drawer) combined with Fragments to move between screens.
 
+My notes:
+Welcome to the capital of Latvia - Riga! Tested (live) on Samsung Galaxy S4 mini (hence the minimum target API 19) and (emulator) Nexus 5X (API 27). The most challenging thing for me was creating loops for populating Array Lists and arrays with drawables ID's. The last one was especially tricky.
+
 PROJECT SPECIFICATION
 
 Layout
