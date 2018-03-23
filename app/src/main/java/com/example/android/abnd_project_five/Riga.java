@@ -37,7 +37,7 @@ public class Riga {
     private static final String NO_PRICE_RANGE_PROVIDED = "null";
 
     /**
-     * Create a new Riga object for fragment TopSights.
+     * Create a new Riga object for fragment TopSights, With Kids.
      *
      * @param venueTitle   is the title of the venue.
      * @param workingHours is the working hours.

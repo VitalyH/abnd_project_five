@@ -4,6 +4,8 @@
     <string name="category_wine_dine">Wine &amp; Dine</string>
     <string name="category_bars_clubs">Bars &amp; Clubs</string>
     <string name="category_with_kids">With Kids</string>
+    <string name="list_view_working_hours">Working Hours</string>
+    <string name="list_view_price_range">Price Range</string>
 
     <!-- Top Sights fragment resources -->
 
@@ -158,42 +160,41 @@
     <!-- With Kids fragment resources -->
 
     <array name="with_kids_venues">
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
+        <item>Playground of the downtown sports area</item>
+        <item>Latvian Ethnographic Open-air Museum</item>
+        <item>Science center ZINOO Rīga</item>
+        <item>Latvian Railway History Museum</item>
+        <item>Natural History Museum of Latvia</item>
+        <item>Līvu Aquapark</item>
+        <item>Recreational park Rāmkalni</item>
+        <item>Riga Zoo</item>
+        <item>The Botanical Garden of the University of Latvia</item>
+
     </array>
 
     <array name="with_kids_working_hours">
+        <item>9:00&#8211;21:00</item>
+        <item>10:00&#8211;17:00</item>
         <item>12:00&#8211;22:00</item>
+        <item>10:00&#8211;17:00</item>
         <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
-        <item>12:00&#8211;22:00</item>
+        <item>10:00&#8211;17:00</item>
+        <item>11:00&#8211;22:00</item>
+        <item>10:00&#8211;22:00</item>
+        <item>10:00&#8211;19:00</item>
     </array>
 
     <array name="with_kids_web_address">
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
-        <item>****</item>
+        <item>https://www.liveriga.com/en/9656-playground-of-the-downtown-sports-area</item>
+        <item>https://www.liveriga.com/en/1153-latvian-ethnographic-open-air-mu</item>
+        <item>https://www.liveriga.com/en/5844-curiosity-centre-zinoo</item>
+        <item>https://www.liveriga.com/en/1686-latvian-railway-history-museum</item>
+        <item>https://www.liveriga.com/en/1576-natural-history-museum-of-latvia</item>
+        <item>https://www.liveriga.com/en/1165-livu-aquapark</item>
+        <item>https://www.liveriga.com/en/5272-recreational-park-ramkalni</item>
+        <item>https://www.liveriga.com/en/7556-riga-zoo-1</item>
+        <item>https://www.liveriga.com/en/1578-the-botanical-garden-of-the-university-of-latvia
+        </item>
     </array>
 
 </resources>
