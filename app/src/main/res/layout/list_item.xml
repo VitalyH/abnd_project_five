@@ -25,6 +25,7 @@
         android:orientation="vertical">
 
         <!-- Venue title -->
+        <!-- Visibility: All -->
         <TextView
             android:id="@+id/list_view_venue_title"
             style="@style/ListViewSongPlaylistTitle"
@@ -32,24 +33,47 @@
             android:layout_height="wrap_content" />
 
         <!-- Working hours tag -->
+        <!-- Visibility: All -->
         <TextView
             android:id="@+id/list_view_working_hours_tag"
-            style="@style/ListViewTag"
+            style="@style/ListViewArtist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/list_view_venue_title"
             android:text="Working Hours:" />
 
         <!-- Working hours -->
+        <!-- Visibility: All -->
         <TextView
             android:id="@+id/list_view_working_hours"
-            style="@style/ListViewNumbers"
+            style="@style/ListViewArtist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/list_view_venue_title"
             android:layout_toEndOf="@+id/list_view_working_hours_tag" />
 
+        <!-- Price range tag -->
+        <!-- Visibility: Wine&Dine -->
+        <TextView
+            android:id="@+id/list_view_price_range_tag"
+            style="@style/ListViewTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_view_working_hours_tag"
+            android:text="Price Range:" />
+
+        <!-- Price range -->
+        <!-- Visibility: Wine&Dine -->
+        <TextView
+            android:id="@+id/list_view_price_range"
+            style="@style/ListViewNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_view_working_hours_tag"
+            android:layout_toEndOf="@+id/list_view_price_range_tag" />
+
         <!-- Button on the right side -->
+        <!-- Visibility: All -->
         <ImageView
             android:id="@+id/list_view_button"
             style="@style/ListViewPlayEuroButton"

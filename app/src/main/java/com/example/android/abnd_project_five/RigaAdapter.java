@@ -41,6 +41,20 @@ public class RigaAdapter extends ArrayAdapter<Riga> {
         TextView workingHoursTextView = listItemView.findViewById(R.id.list_view_working_hours);
         workingHoursTextView.setText(currentRiga.getWorkingHours());
 
+        // Find in the list_item.xml the price range and set on the TextView.
+        // Check whether or not there is price range field.
+        TextView priceRangeTagTextView = listItemView.findViewById(R.id.list_view_price_range_tag);
+        TextView priceRangeTextView = listItemView.findViewById(R.id.list_view_price_range);
+
+        if (currentRiga.hasPriceRange()) {
+            priceRangeTextView.setText(currentRiga.getPriceRange());
+            priceRangeTextView.setVisibility(View.VISIBLE);
+            priceRangeTagTextView.setVisibility(View.VISIBLE);
+        } else {
+            priceRangeTextView.setVisibility(View.GONE);
+            priceRangeTagTextView.setVisibility(View.GONE);
+        }
+
         // Find in the list_item.xml the venue image and set on the ImageView.
         ImageView imageView = listItemView.findViewById(R.id.list_view_venue_image);
         imageView.setImageResource(currentRiga.getVenueImage());
