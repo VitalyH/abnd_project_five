@@ -4,6 +4,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.android.abnd_project_five.fragment.BarsClubsFragment;
+import com.example.android.abnd_project_five.fragment.TopSightsFragment;
+import com.example.android.abnd_project_five.fragment.WineDineFragment;
+import com.example.android.abnd_project_five.fragment.WithKidsFragment;
+
 /**
  * Provides the appropriate Fragment for a view pager.
  */

@@ -1,4 +1,4 @@
-package com.example.android.abnd_project_five;
+package com.example.android.abnd_project_five.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,6 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.example.android.abnd_project_five.R;
+import com.example.android.abnd_project_five.Riga;
+import com.example.android.abnd_project_five.RigaAdapter;
 
 import java.util.ArrayList;
 
@@ -23,29 +27,29 @@ public class WineDineFragment extends Fragment {
 
         // Create an ArrayList for Wine&Dine fragment.
         // Populate string arrays with information from strings.xml.
-        String[] wine_dine_venues = getResources().getStringArray(R.array.wine_dine_venues);
-        String[] wine_dine_working_hours = getResources().getStringArray(R.array.wine_dine_working_hours);
-        String[] wine_dine_price_range = getResources().getStringArray(R.array.wine_dine_price_range);
-        String[] wine_dine_web_address = getResources().getStringArray(R.array.wine_dine_web_address);
+        String[] wineDineVenues = getResources().getStringArray(R.array.wine_dine_venues);
+        String[] wineDineWorkingHours = getResources().getStringArray(R.array.wine_dine_working_hours);
+        String[] wineDinePriceRange = getResources().getStringArray(R.array.wine_dine_price_range);
+        String[] wineDineWebAddress = getResources().getStringArray(R.array.wine_dine_web_address);
 
         // Get number of venues.
         // It's a counter for loops below.
-        int venuesNameSize = wine_dine_venues.length;
+        int venuesNameSize = wineDineVenues.length;
 
         // Populate int array with drawables ID's.
-        int[] wine_dine_photo = new int[venuesNameSize];
+        int[] wineDinePhoto = new int[venuesNameSize];
         for (int i = 0; i < venuesNameSize; i++)
-            wine_dine_photo[i] = getResources().getIdentifier("wd_" + String.valueOf(i + 1), "drawable", getActivity().getPackageName());
+            wineDinePhoto[i] = getResources().getIdentifier("wd_" + String.valueOf(i + 1), "drawable", getActivity().getPackageName());
 
         // Create Array List for Wine&Dine.
         final ArrayList<Riga> rigas = new ArrayList<>();
         for (int i = 0; i < venuesNameSize; i++) {
-            String venue_name = wine_dine_venues[i];
-            String working_hours = wine_dine_working_hours[i];
-            String price_range = wine_dine_price_range[i];
-            String web_address = wine_dine_web_address[i];
-            int photo = wine_dine_photo[i];
-            rigas.add(new Riga(venue_name, working_hours, price_range, web_address, photo));
+            String venueName = wineDineVenues[i];
+            String workingHours = wineDineWorkingHours[i];
+            String priceRange = wineDinePriceRange[i];
+            String webAddress = wineDineWebAddress[i];
+            int photo = wineDinePhoto[i];
+            rigas.add(new Riga(venueName, workingHours, priceRange, webAddress, photo));
         }
 
         // Use RigaAdapter.

@@ -1,4 +1,4 @@
-package com.example.android.abnd_project_five;
+package com.example.android.abnd_project_five.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,44 +10,48 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.android.abnd_project_five.R;
+import com.example.android.abnd_project_five.Riga;
+import com.example.android.abnd_project_five.RigaAdapter;
+
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TopSightsFragment extends Fragment {
+public class WithKidsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        // Create an ArrayList for Top Sights fragment.
+        // Create an ArrayList for With Kids fragment.
         // Populate string arrays with information from strings.xml.
-        String[] top_sights_venues = getResources().getStringArray(R.array.top_sights_venues);
-        String[] top_sights_working_hours = getResources().getStringArray(R.array.top_sights_working_hours);
-        String[] top_sights_web_address = getResources().getStringArray(R.array.top_sights_web_address);
+        String[] with_kids_venues = getResources().getStringArray(R.array.with_kids_venues);
+        String[] with_kids_working_hours = getResources().getStringArray(R.array.with_kids_working_hours);
+        String[] with_kids_web_address = getResources().getStringArray(R.array.with_kids_web_address);
 
         // Get number of venues.
         // It's a counter for loops below.
-        int venuesNameSize = top_sights_venues.length;
+        int venuesNameSize = with_kids_venues.length;
 
         // Populate int array with drawables ID's.
-        int[] top_sights_photo = new int[venuesNameSize];
+        int[] with_kids_photo = new int[venuesNameSize];
         for (int i = 0; i < venuesNameSize; i++)
-            top_sights_photo[i] = getResources().getIdentifier("s_" + String.valueOf(i + 1), "drawable", getActivity().getPackageName());
+            with_kids_photo[i] = getResources().getIdentifier("wk_" + String.valueOf(i + 1), "drawable", getActivity().getPackageName());
 
-        // Create Array List for Top Sights.
+        // Create Array List for With Kids.
         final ArrayList<Riga> rigas = new ArrayList<>();
         for (int i = 0; i < venuesNameSize; i++) {
-            String venue_name = top_sights_venues[i];
-            String working_hours = top_sights_working_hours[i];
-            String web_address = top_sights_web_address[i];
-            int photo = top_sights_photo[i];
+            String venue_name = with_kids_venues[i];
+            String working_hours = with_kids_working_hours[i];
+            String web_address = with_kids_web_address[i];
+            int photo = with_kids_photo[i];
             rigas.add(new Riga(venue_name, working_hours, web_address, photo));
         }
 
         // Use RigaAdapter.
-        RigaAdapter adapter = new RigaAdapter(getActivity(), rigas, R.color.category_sights);
+        RigaAdapter adapter = new RigaAdapter(getActivity(), rigas, R.color.category_kids);
         View rootView = inflater.inflate(R.layout.activity_main, container, false);
         ListView listView = rootView.findViewById(R.id.riga);
         if (listView != null) {

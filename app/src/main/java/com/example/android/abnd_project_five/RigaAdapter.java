@@ -7,12 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class RigaAdapter extends ArrayAdapter<Riga> {
     private int mColorResourceId;
+
+    // Initialize ViewHolder.
+    public static class ViewHolder {
+        TextView textViewVenue;
+        TextView textViewHours;
+        TextView textViewPriceRangeTag;
+        TextView textViewPriceRange;
+        ImageView imageViewPhoto;
+        RelativeLayout textContainer;
+    }
 
     // Initialize the ArrayAdapter's internal storage.
     // Resource "0" because it's a custom adapter for more then one TextView.
@@ -23,50 +34,46 @@ public class RigaAdapter extends ArrayAdapter<Riga> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         // Check if the existing view is being reused, otherwise inflate the view.
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
-        // Get the object located at this position in the list.
+        // Get the object located at this positioren in the list.
         Riga currentRiga = getItem(position);
 
-        // Find in the list_item.xml the venue title and set on the TextView.
-        TextView venueTextView = listItemView.findViewById(R.id.list_view_venue_title);
-        venueTextView.setText(currentRiga.getVenueTitle());
+        // Create new ViewHolder for text views.
+        ViewHolder holder = new ViewHolder();
+        holder.textViewVenue = convertView.findViewById(R.id.list_view_venue_title);
+        holder.textViewVenue.setText(currentRiga.getVenueTitle());
+        holder.textViewHours = convertView.findViewById(R.id.list_view_working_hours);
+        holder.textViewHours.setText(currentRiga.getWorkingHours());
+        holder.textViewPriceRangeTag = convertView.findViewById(R.id.list_view_price_range_tag);
+        holder.textViewPriceRange = convertView.findViewById(R.id.list_view_price_range);
 
-        // Find in the list_item.xml the working hours and set on the TextView.
-        TextView workingHoursTextView = listItemView.findViewById(R.id.list_view_working_hours);
-        workingHoursTextView.setText(currentRiga.getWorkingHours());
 
-        // Find in the list_item.xml the price range and set on the TextView.
         // Check whether or not there is price range field.
-        TextView priceRangeTagTextView = listItemView.findViewById(R.id.list_view_price_range_tag);
-        TextView priceRangeTextView = listItemView.findViewById(R.id.list_view_price_range);
-
         if (currentRiga.hasPriceRange()) {
-            priceRangeTextView.setText(currentRiga.getPriceRange());
-            priceRangeTextView.setVisibility(View.VISIBLE);
-            priceRangeTagTextView.setVisibility(View.VISIBLE);
+            holder.textViewPriceRange.setText(currentRiga.getPriceRange());
+            holder.textViewPriceRange.setVisibility(View.VISIBLE);
+            holder.textViewPriceRangeTag.setVisibility(View.VISIBLE);
         } else {
-            priceRangeTextView.setVisibility(View.GONE);
-            priceRangeTagTextView.setVisibility(View.GONE);
+            holder.textViewPriceRange.setVisibility(View.GONE);
+            holder.textViewPriceRangeTag.setVisibility(View.GONE);
         }
 
-        // Find in the list_item.xml the venue image and set on the ImageView.
-        ImageView imageView = listItemView.findViewById(R.id.list_view_venue_image);
-        imageView.setImageResource(currentRiga.getVenueImage());
+        // Handle an image.
+        holder.imageViewPhoto = convertView.findViewById(R.id.list_view_venue_image);
+        holder.imageViewPhoto.setImageResource(currentRiga.getVenueImage());
 
-        // Set the theme color for the list item.
-        // Find the color from resource ID.
-        // Set the background color of the text container.
-        View textContainer = listItemView.findViewById(R.id.list_view_text_container);
+        // Set color of the container.
+        holder.textContainer = convertView.findViewById(R.id.list_view_text_container);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
-        textContainer.setBackgroundColor(color);
+        holder.textContainer.setBackgroundColor(color);
 
         // Return the whole list item layout.
-        return listItemView;
+        return convertView;
     }
 }
