@@ -1,4 +1,4 @@
-Android Basics Nanodegree Program Project Four - Tour Guide app
+Android Basics Nanodegree Program Project Five - Tour Guide app
 
 !!!! See /Screenshots folder! !!!
 
